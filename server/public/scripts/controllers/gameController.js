@@ -1,4 +1,4 @@
-colorBlocks.controller('GameController', ['$scope', function($scope) {
+colorBlocks.controller('GameController', ['$scope', 'dataFactory', function($scope, dataFactory) {
 
 console.log('game controller running');
 

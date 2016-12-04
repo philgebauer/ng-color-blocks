@@ -1,3 +1,4 @@
+
 main {
   margin: 50px;
 }
@@ -12,4 +13,9 @@ main {
     float: left;
     margin: 10px;
     cursor: pointer;
+}
+
+#button-container {
+  margin: 0 auto;
+  padding-left: 100px;
 }

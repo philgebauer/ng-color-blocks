@@ -1,9 +1,12 @@
-<div class="row" id="gameview">
+
+<div class="row container-fluid text-center" id="gameview">
   <h1>{{game.colorPrompt}}</h1>
 
   <h3 ng-if="game.messageText != ''" class="alert alert-warning">{{game.messageText}}</h3>
 
-  <div id="button-container">
+  <div id="button-container flex">
+
+  
     <div class="color-button" ng-repeat="color in game.colors" ng-style="{background: color}" ng-click="game.handleInput(color)"></div>
   </div>
 </div>

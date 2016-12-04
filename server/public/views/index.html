@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,12 +7,19 @@
     <link rel="stylesheet" href="/css/style.css" />
 
     <script type="text/javascript" src="/vendor/angular.min.js"></script>
-    <script type="text/javascript" src="/vendor/angular-route.min.js"></script>    
+    <script type="text/javascript" src="/vendor/angular-route.min.js"></script>
     <script type="text/javascript" src="/scripts/clientapp.js"></script>
-    <script type="text/javascript" src="/scripts/services/dataFactory.js"></script>
+    <script type="text/javascript" src="/scripts/services/colorFactory.js"></script>
     <script type="text/javascript" src="/scripts/controllers/gameController.js"></script>
     <script type="text/javascript" src="/scripts/controllers/settingsController.js"></script>
 </head>
+
+<div class="container">
+  <div class="jumbotron">
+    <h1>Pick-a-Color!</h1>
+    <p>Find the right color block!</p> 
+  </div>
+</div>
 
 <body ng-app="colorBlocks" ng-controller="GameController">
     <header ng-include="'/views/templates/nav.html'"></header>

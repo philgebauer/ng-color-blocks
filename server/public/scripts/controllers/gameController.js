@@ -1,9 +1,8 @@
-colorBlocks.controller('GameController', ['$scope', 'dataFactory', function($scope, dataFactory) {
-
+colorBlocks.controller('GameController', ["ColorFactory", function(ColorFactory) {
 console.log('game controller running');
 
 var self = this;
-self.colors = ['red', 'blue', 'magenta', 'green', 'pink'];
+self.colors = ColorFactory.currentColors;
 
 // start game
 init();
@@ -24,7 +23,6 @@ self.handleInput = function(clickedColor) {
     self.messageText = 'Oh no! You guessed wrong!';
   }
 }
-
 //UTILITY FUNCTIONS
 function randomNumber(min, max){
     return Math.floor(Math.random() * (1 + max - min) + min);
